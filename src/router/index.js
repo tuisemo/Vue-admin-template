@@ -66,7 +66,7 @@ export const constantRoutes = [
         path: 'table',
         name: 'Table',
         component: () => import('@/views/table/index'),
-        meta: { title: 'Table', icon: 'table' }
+        meta: { title: '激活码管理', icon: 'table' }
       },
       {
         path: 'table/detail/:id',
