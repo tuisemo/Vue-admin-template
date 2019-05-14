@@ -15,3 +15,11 @@ export function getDetailList(params) {
     params
   })
 }
+
+export function asyncRequest(params) {
+  return request({
+    url: '/table/detail/list',
+    method: 'get',
+    params
+  })
+}

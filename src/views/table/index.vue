@@ -91,7 +91,9 @@ export default {
       })
     },
     queryData() {
-      this.fetchData()
+      this.$store.dispatch('test').then(res => {
+        console.log('res:====== ', res)
+      })
     }
   }
 }
