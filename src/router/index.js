@@ -79,6 +79,18 @@ export const constantRoutes = [
   },
 
   {
+    path: '/demo',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        name: 'demo',
+        component: () => import('@/views/example/index'),
+        meta: { title: 'demo', icon: 'form' }
+      }
+    ]
+  },
+  {
     path: '/form',
     component: Layout,
     children: [
